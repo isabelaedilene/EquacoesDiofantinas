@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  	<head>
+	    <title>Equação diofantina</title>
+	    <meta charset="utf-8">
+	    <script type="text/javascript" src="EquacaoDiofantinaController.js"></script>
+	    <script
+		  src="https://code.jquery.com/jquery-3.4.1.js"
+		  integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+		  crossorigin="anonymous"></script>
+  	</head>
+ 	<body>
+ 		<h1> Equações diofantinas </h1>
+
+		<p>Informações: </p>
+		<p>(a) ax + by = c tem solução se e somente s c for múltiplo do mdc(a, b). </p>
+		<p>(b) se x0 e y0 é uma solução particular de ax + by = c, então x = x0 + (b/d)t e y = y0 - (a/d)t, com t um inteiro qualquer e d = mdc(a, b), são soluções de ax + by = c. </p>	
+		<p>Reescrevendo: x = x0 + bt e y = y0 - at </p></br>
+
+	    Coeficiente A: <input id="cofA" type="text"/>
+	    Coeficiente B: <input id="cofB" type="text"/>
+	    Coeficiente C: <input id="cofC" type="text"/>
+		<button id="buttonCalcularEqDio" type="button">Calcular</button>
+
+		<div id="resultado"></div>
+		<div id="resultadoPositivo"></div>
+  	</body>
+</html>
